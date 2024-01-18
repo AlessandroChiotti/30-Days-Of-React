@@ -1,17 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const title = "SUBSCRIBE";
+const subtitle = "Sign up with your email address to receive news and updates.";
+
+const Input = () =>
+  ["First name", "Last name", "Email"].map((placeholder) => (
+    <input type="text" placeholder={placeholder} />
+  ));
+
+const Header = () => (
+  <header>
+    <div className="header-wrapper">
+      <h1>{title}</h1>
+      <p>{subtitle}</p>
+      <div className="input-wrapper">
+        <Input />
+      </div>
+      <br />
+      <button>Subscribe</button>
+    </div>
+  </header>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const App = () => <div className="app">{<Header />}</div>;
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
