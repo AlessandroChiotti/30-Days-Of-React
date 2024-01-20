@@ -13,15 +13,8 @@ const Header = ({ title }) => (
   </header>
 );
 
-const LogosComponent = ({ logos }) => {
-  return (
-    <div>
-      {logos.map(({ src, alt }) => (
-        <img src={src} alt={alt} />
-      ))}
-    </div>
-  );
-};
+const LogosComponent = ({ logos }) =>
+  logos.map(({ src, alt }) => <img src={src} alt={alt} />);
 
 // JSX element, main
 const Main = ({ logos }) => {
