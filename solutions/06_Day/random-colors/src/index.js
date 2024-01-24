@@ -12,35 +12,35 @@ const hexaColor = () => {
 };
 
 const titleStyle = {
-  "text-align": "center",
+  textAlign: "center",
   color: "black",
-  "font-family": "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-  "font-size": "50px",
-  "font-weight": "lighter",
+  fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+  fontSize: "50px",
+  fontWeight: "lighter",
 };
 
 const subtitleStyle = {
-  "text-align": "center",
+  textAlign: "center",
   color: "black",
-  "font-family": "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-  "font-size": "30px",
-  "font-weight": "lighter",
+  fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+  fontSize: "30px",
+  fontWeight: "lighter",
 };
 
 const tableStyle = {
-  "margin-left": "auto",
-  "margin-right": "auto",
+  marginLeft: "auto",
+  marginRight: "auto",
   width: "50%",
 };
 
 const tableDataStyle = {
-  "padding-top": "60px",
-  "padding-bottom": "60px",
-  "padding-left": "30px",
-  "padding-right": "30px",
+  paddingTop: "60px",
+  paddingBottom: "60px",
+  paddingLeft: "30px",
+  paddingRight: "30px",
   color: "white",
-  "font-family": "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-  "font-size": "20px",
+  fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+  fontSize: "20px",
 };
 
 const CalendarComponent = () => {
